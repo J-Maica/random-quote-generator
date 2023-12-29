@@ -1,0 +1,112 @@
+:root {
+    
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    overflow-x: hidden;
+    background-image: url(bg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #d5d5d5;
+    background-blend-mode: multiply;
+    color: #ffffffde;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.main {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.quoteContainer {
+    background-color: #0d1a25c9;
+    padding: 32px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+p {
+    font-size: x-large;
+}
+
+#screenshotBtn{
+    width: fit-content;
+    padding: 4px 8px 4px 8px;
+    border-radius: 4px;
+    background-color: #0d1a25c9;
+    color: #ffffffde;
+    cursor: pointer;
+}
+
+
+/* Responsive Design */
+/* Laptop (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 16px; 
+    }
+
+    .main {
+        width: 80vw; 
+    }
+
+    h1 {
+        font-size: 2.5em; 
+    }
+
+    p {
+        font-size: large; /* Adjusted to maintain consistency with other screens */
+    }
+}
+
+/* Tablet (480px - 767px) */
+@media (min-width: 480px) and (max-width: 767px) {
+    body {
+        font-size: 14px; /* Adjusted for tablets */
+    }
+
+    .main {
+        width: 80vw; 
+    }
+
+    h1 {
+        font-size: 2em; 
+    }
+
+    p {
+        font-size: medium; 
+    }
+}
+
+/* Mobile (Up to 479px) */
+@media (max-width: 479px) {
+    body {
+        font-size: 12px; /* Adjusted for small screens */
+    }
+
+    .main {
+        width: 90vw; 
+    }
+
+    h1 {
+        font-size: 1.8em; /* Further adjusted for small screens */
+    }
+
+    p {
+        font-size: small; /* Adjusted for small screens */
+    }
+}

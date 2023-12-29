@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Random Quote Generator by Jean Maica del Remedio ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <title>Random Quote Generator</title>
+</head>
+<body>
+    <div class="main">
+        <button id="screenshotBtn">Take Screenshot</button>
+        <p id="guide"></p>
+        <div class="quoteContainer" onclick="getQuotes()" onmouseenter="showGuide()" onmouseleave="hideGuide()">
+            <h1 id="quoteContent"></h1>
+            <p id="quoteAuthor"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
